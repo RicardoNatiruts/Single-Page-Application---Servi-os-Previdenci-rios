@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Serviços Previdenciários | Aposentadoria, BPC/LOAS, Pensão e mais</title>
+<meta name="description" content="Atendimento em aposentadorias, auxílio-doença, BPC/LOAS, pensão por morte, salário-maternidade, revisão de benefícios e planejamento previdenciário.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f7f5;--surface:#fff;--ink:#14262b;--muted:#4d6166;--line:#d4dedb;--brand:#12504a;--brand-ink:#fff;--accent:#e3a62b;--wa:#17803f;--wa-ink:#fff;--hero:#12504a;--hero-ink:#f4f7f5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1b1d;--surface:#16272a;--ink:#e8f0ee;--muted:#9bb0ad;--line:#2a3f42;--brand:#6fc3b6;--brand-ink:#0f1b1d;--wa:#2fa65d;--hero:#0b2a28;--hero-ink:#e8f0ee}}
+:root[data-theme="dark"]{--bg:#0f1b1d;--surface:#16272a;--ink:#e8f0ee;--muted:#9bb0ad;--line:#2a3f42;--brand:#6fc3b6;--brand-ink:#0f1b1d;--wa:#2fa65d;--hero:#0b2a28;--hero-ink:#e8f0ee}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:700 20px "Source Serif 4",Georgia,serif;text-decoration:none}
+.btn{display:inline-block;border:0;border-radius:8px;padding:14px 22px;font:600 17px "Public Sans",sans-serif;cursor:pointer;text-decoration:none;background:var(--wa);color:var(--wa-ink)}
+.btn:hover{filter:brightness(1.08)}
+.hero{background:var(--hero);color:var(--hero-ink)}
+.hero .top .btn{padding:10px 16px;font-size:15px}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:40px 0 72px}
+.hero h1{font-size:clamp(34px,5.4vw,56px);font-weight:700;letter-spacing:-.01em}
+.hero p.lead{font-size:19px;max-width:34em;margin:20px 0 0;opacity:.92}
+.form{background:var(--surface);color:var(--ink);border-radius:12px;padding:26px;border-top:6px solid var(--accent)}
+.form h2{font-size:24px;margin-bottom:6px}
+.form p{margin:0 0 16px;color:var(--muted);font-size:15px}
+label{display:block;font-weight:600;font-size:15px;margin:12px 0 4px}
+input,select{width:100%;padding:12px;border:1.5px solid var(--line);border-radius:8px;font:inherit;background:var(--bg);color:var(--ink)}
+.form .btn{width:100%;margin-top:18px}
+.small{font-size:13px;color:var(--muted);margin-top:10px!important}
+section{padding:64px 0}
+section h2.t{font-size:clamp(28px,4vw,38px);margin-bottom:10px}
+.sub{color:var(--muted);max-width:36em;margin:0 0 32px}
+.list{border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) auto;gap:20px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.row h3{font-size:22px}
+.row p{margin:0;color:var(--muted);font-size:16px}
+.row a{font-weight:600;color:var(--brand);white-space:nowrap}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;border-left:4px solid var(--accent);padding-left:18px}
+.steps li::before{content:"Passo " counter(s);display:block;font-weight:600;color:var(--brand);font-size:15px}
+.steps h3{font-size:21px;margin:4px 0 6px}
+.steps p{margin:0;color:var(--muted);font-size:16px}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;font-size:18px}
+details p{color:var(--muted);margin:10px 0 0;max-width:42em}
+.cta{background:var(--hero);color:var(--hero-ink);text-align:center}
+.cta h2{font-size:clamp(28px,4vw,40px);margin-bottom:14px}
+.cta p{max-width:32em;margin:0 auto 26px;opacity:.9}
+footer{padding:28px 0 96px;font-size:13px;color:var(--muted)}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;box-shadow:0 4px 14px rgba(0,0,0,.3);display:none}
+@media (max-width:760px){
+.hero .grid{grid-template-columns:1fr;gap:32px;padding-bottom:48px}
+.row{grid-template-columns:1fr;gap:6px}
+.steps{grid-template-columns:1fr}
+section{padding:48px 0}
+.fab{display:inline-block}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="wrap">
+<header class="top">
+<a class="logo" href="#">Serviços Previdenciários</a>
+<a class="btn wa-link" href="#">Falar no WhatsApp</a>
+</header>
+<div class="grid">
+<div>
+<h1>Seu direito ao INSS, explicado e acompanhado do começo ao fim.</h1>
+<p class="lead">Aposentadorias, auxílio-doença, BPC/LOAS, pensão por morte, salário-maternidade e revisões. Conte seu caso e descubra qual benefício pode ser o seu, sem compromisso.</p>
+</div>
+<form class="form" id="f" novalidate>
+<h2>Análise inicial gratuita</h2>
+<p>Preencha e continue a conversa pelo WhatsApp.</p>
+<label for="n">Seu nome</label>
+<input id="n" autocomplete="name" required>
+<label for="s">Qual benefício te interessa?</label>
+<select id="s">
+<option>Ainda não sei, preciso de orientação</option>
+<option>Aposentadoria por idade</option>
+<option>Aposentadoria por tempo de contribuição</option>
+<option>Aposentadoria especial</option>
+<option>Auxílio-doença</option>
+<option>BPC/LOAS</option>
+<option>Pensão por morte</option>
+<option>Salário-maternidade</option>
+<option>Revisão de benefícios</option>
+<option>Planejamento previdenciário</option>
+</select>
+<label for="c">Conte em uma frase sua situação (opcional)</label>
+<input id="c" placeholder="Ex.: trabalhei na roça e quero me aposentar">
+<button class="btn" type="submit">Enviar pelo WhatsApp</button>
+<p class="small">Seus dados são usados apenas para o atendimento.</p>
+</form>
+</div>
+</div>
+</div>
+
+<section id="servicos">
+<div class="wrap">
+<h2 class="t">Benefícios em que posso ajudar</h2>
+<p class="sub">Cada caso depende de documentos e do histórico de contribuição. Clique no benefício para falar sobre o seu.</p>
+<div class="list">
+<div class="row"><h3>Aposentadoria por idade</h3><p>Para quem atingiu a idade mínima e o tempo mínimo de contribuição. Inclui a modalidade rural.</p><a class="wa-link" href="#" data-s="Aposentadoria por idade">Quero saber mais</a></div>
+<div class="row"><h3>Aposentadoria por tempo de contribuição</h3><p>Análise das regras de transição da reforma da Previdência para ver qual é a mais vantajosa.</p><a class="wa-link" href="#" data-s="Aposentadoria por tempo de contribuição">Quero saber mais</a></div>
+<div class="row"><h3>Aposentadoria especial</h3><p>Para quem trabalhou exposto a agentes nocivos à saúde, como ruído, calor ou produtos químicos.</p><a class="wa-link" href="#" data-s="Aposentadoria especial">Quero saber mais</a></div>
+<div class="row"><h3>Auxílio-doença</h3><p>Proteção para quem está incapacitado de trabalhar por doença ou acidente. Também ajuda em casos de benefício negado ou cessado.</p><a class="wa-link" href="#" data-s="Auxílio-doença">Quero saber mais</a></div>
+<div class="row"><h3>BPC/LOAS</h3><p>Benefício de um salário mínimo para idosos com 65 anos ou mais e pessoas com deficiência, de baixa renda.</p><a class="wa-link" href="#" data-s="BPC/LOAS">Quero saber mais</a></div>
+<div class="row"><h3>Pensão por morte</h3><p>Amparo para a família de quem faleceu e era segurado do INSS. Orientação sobre dependentes e prazos.</p><a class="wa-link" href="#" data-s="Pensão por morte">Quero saber mais</a></div>
+<div class="row"><h3>Salário-maternidade</h3><p>Para gestantes, mães por adoção ou guarda judicial. Atende também trabalhadoras rurais, autônomas, contribuintes individuais e desempregadas dentro do período de graça.</p><a class="wa-link" href="#" data-s="Salário-maternidade">Quero saber mais</a></div>
+<div class="row"><h3>Revisão de benefícios</h3><p>Conferência do cálculo de benefícios já concedidos, para identificar se há erro ou valor a corrigir.</p><a class="wa-link" href="#" data-s="Revisão de benefícios">Quero saber mais</a></div>
+<div class="row"><h3>Planejamento previdenciário</h3><p>Estudo do seu histórico para definir quando e como se aposentar com o melhor resultado possível.</p><a class="wa-link" href="#" data-s="Planejamento previdenciário">Quero saber mais</a></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="como">
+<div class="wrap">
+<h2 class="t">Como funciona o atendimento</h2>
+<p class="sub">Um caminho simples, sem burocracia para você.</p>
+<ol class="steps">
+<li><h3>Você conta seu caso</h3><p>Pelo formulário ou direto no WhatsApp, em poucas palavras.</p></li>
+<li><h3>Analisamos seus documentos</h3><p>Verificamos CNIS, carteira de trabalho e demais comprovantes.</p></li>
+<li><h3>Você decide o próximo passo</h3><p>Explicamos as possibilidades com clareza e você escolhe como seguir.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="duvidas">
+<div class="wrap">
+<h2 class="t">Dúvidas frequentes</h2>
+<p class="sub">Respostas rápidas para começar.</p>
+<details><summary>Quais documentos devo separar?</summary><p>Documento com foto, CPF, carteira de trabalho, extrato do CNIS (Meu INSS) e, se houver, laudos médicos ou comprovantes de atividade rural ou especial.</p></details>
+<details><summary>Meu pedido foi negado pelo INSS. Ainda há o que fazer?</summary><p>Muitas vezes sim. É possível analisar o motivo da negativa e verificar se cabe recurso administrativo ou outra medida.</p></details>
+<details><summary>A primeira conversa tem custo?</summary><p>A análise inicial é gratuita e sem compromisso.</p></details>
+<details><summary>Posso ser atendido à distância?</summary><p>Sim. A maior parte do atendimento pode ser feita por WhatsApp e pelo Meu INSS.</p></details>
+</div>
+</section>
+
+<section class="cta">
+<div class="wrap">
+<h2>Descubra o que você pode ter direito a receber</h2>
+<p>Envie uma mensagem agora e receba orientação sobre o melhor caminho para o seu caso.</p>
+<a class="btn wa-link" href="#">Falar no WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<p>Dr. Carlos Rocha · Serviços Previdenciários · Palmas, TO · Contato: (63) 99231-2905</p>
+<p>As informações deste site são gerais e não substituem a análise individual do seu caso. A concessão de benefícios depende dos requisitos legais e da avaliação do INSS. Não há promessa de resultado.</p>
+</div>
+</footer>
+
+<a class="btn fab wa-link" href="#">WhatsApp</a>
+
+<script>
+// EDITE AQUI: número com DDI + DDD, apenas dígitos (ex.: 5563999999999)
+var WHATSAPP="5563992312905";
+function link(txt){return "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(txt)}
+document.querySelectorAll(".wa-link").forEach(function(a){
+  var s=a.getAttribute("data-s");
+  var t=s?"Olá! Tenho interesse em: "+s+". Pode me orientar?":"Olá! Gostaria de uma orientação sobre benefícios do INSS.";
+  a.href=link(t);a.target="_blank";a.rel="noopener";
+});
+document.getElementById("f").addEventListener("submit",function(e){
+  e.preventDefault();
+  var n=document.getElementById("n").value.trim();
+  if(!n){document.getElementById("n").focus();return}
+  var s=document.getElementById("s").value,c=document.getElementById("c").value.trim();
+  var t="Olá! Meu nome é "+n+". Tenho interesse em: "+s+"."+(c?" Meu caso: "+c:"");
+  window.open(link(t),"_blank","noopener");
+});
+</script>
+</body>
+</html>
